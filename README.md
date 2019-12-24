@@ -39,3 +39,42 @@
 | 自动转码   | 用户在视频网站下载的弹幕文件为ass，可以直接上传到软件中转码 |重要   |
 | 筛选功能   | 太多的内容使用户想选取其中言语辱骂较为严重的区域进行查看         |很重要   |
 | 举报功能 | 对于用户筛选出的言论进行最终的举报         |很重要   |
+
+## 原型
+
+## API 产品使用关键AI或机器学习之API的输出入展示
+### API1.使用水平
+- 文本审核
+- 输入
+```
+def check_content():
+    request_url = 'https://aip.baidubce.com/rest/2.0/antispam/v2/spam?access_token=【你自己的access token哦！！！】'
+    items = {'1':'暴恐违禁', '2':'文本色情', '3':'政治敏感', '4':'恶意推广', '5':'低俗辱骂', '6':'低质灌水'}
+
+    with open('./baidu_data/checked_data_1.txt', 'r', encoding='utf8') as fr:
+        with open('./baidu_data/data_1_check_result.txt', 'a', encoding='utf8') as fw:
+            for i, each in enumerate(fr.readlines()):
+                print('正在检测样本：{}'.format(i))
+                params = {'content': each.strip().split('\t')[-1]}
+                result = requests.post(request_url, headers={'Content-Type': 'application/x-www-form-urlencoded'}, data=params).text
+                predict_res = (json.loads(result).get('result')).get('reject')
+                print(predict_res)
+
+                if len(predict_res) == 0:
+                    # 普通直接保存
+                    fw.write('普通\t'+'0\t###\t'+each)
+                else:
+                    # 获取拒绝得分最高的那个
+                    score = []
+                    content = []
+                    for each_hit in predict_res:
+                        score.append(each_hit.get('score'))
+                        temp = each_hit.get('hit')
+                        content.append(str(each_hit.get('label'))+'\t'+','.join(each_hit.get('hit'))+'\t')
+                    # 找到得分最大的那个索引
+                    max_score_index = score.index(max(score))
+                    tag_label = content[max_score_index]
+                    # 写入
+                    fw.write('{}\t'.format(items.get(tag_label.split('\t')[0]))+tag_label+each)
+```
+
