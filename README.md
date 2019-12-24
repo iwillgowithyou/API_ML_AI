@@ -46,8 +46,8 @@
 
 ## API 产品使用关键AI或机器学习之API的输出入展示
 ### API1.使用水平
-- 文本审核
-- 输入
+#### · 文本审核
+#### · 输入
 ```
 def check_content():
     request_url = 'https://aip.baidubce.com/rest/2.0/antispam/v2/spam?access_token=【你自己的access token哦！！！】'
@@ -80,3 +80,4 @@ def check_content():
                     fw.write('{}\t'.format(items.get(tag_label.split('\t')[0]))+tag_label+each)
 ```
 
+#### · 输出
