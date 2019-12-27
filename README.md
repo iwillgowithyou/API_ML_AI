@@ -59,9 +59,9 @@
 - Bilibili开放平台举报API 
 ## 原型
 ### 1.原型源文件[下载地址](https://gitee.com/NFUNM062/API_final_axure)
-### 2。[Axure高保真原型](https://nfunm062.gitee.io/api_final_axure/#g=1&p=%E5%90%AF%E5%8A%A8%E9%A1%B5%E5%92%8C%E5%BC%95%E5%AF%BC%E9%A1%B5)
+### 2.[Axure高保真原型](https://nfunm062.gitee.io/api_final_axure/#g=1&p=%E5%90%AF%E5%8A%A8%E9%A1%B5%E5%92%8C%E5%BC%95%E5%AF%BC%E9%A1%B5)
 ### 3.产品原型图
-#### 3.1启动页和引导页
+#### **3.1启动页和引导页**
 - **启动页**
 ![启动页](http://chuantu.xyz/t6/709/1577453738x2890211847.png)
 - **引导页**
