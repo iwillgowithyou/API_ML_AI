@@ -100,6 +100,66 @@ def check_content():
 ```
 
 #### · 输出
-
+```
+{
+    "log_id": 123456789,
+    "conclusion": "不合规",
+    "conclusionType": 2,
+    "data": [{
+        "type": 11,
+        "subType": 0,
+        "conclusion": "不合规",
+        "conclusionType": 2,
+        "msg": "存在百度官方默认违禁词库不合规",
+        "hits": [{
+            "datasetName": "百度默认黑词库",
+            "words": ["免费翻墙"]
+        }]
+    }, {
+        "type": 12,
+        "subType": 2,
+        "conclusion": "不合规",
+        "conclusionType": 2,
+        "msg": "存在文本色情不合规",
+        "hits": [{
+            "datasetName": "百度默认文本反作弊库",
+            "probability": 1.0,
+            "words": ["电话 找小姐"]
+        }]
+    }, {
+        "type": 12,
+        "subType": 3,
+        "conclusion": "不合规",
+        "conclusionType": 2,
+        "msg": "存在政治敏感不合规",
+        "hits": [{
+            "probability": 1.0,
+            "datasetName": "百度默认文本反作弊库",
+            "words": ["敏感人物A"]
+        }]
+    }, {
+        "type": 12,
+        "subType": 4,
+        "conclusion": "不合规",
+        "conclusionType": 2,
+        "msg": "存在恶意推广不合规",
+        "hits": [{
+            "probability": 1.0,
+            "datasetName": "百度默认文本反作弊库",
+            "words": [""]
+        }]
+    }, {
+        "type": 13,
+        "subType": 0,
+        "conclusion": "不合规",
+        "conclusionType": 2,
+        "msg": "存在自定义文本黑名单不合规",
+        "hits": [{
+            "datasetName": "SLK-测试-自定义黑名单",
+            "words": ["我是你爹", "他妈的"]
+        }]
+    }]
+}
+```
 #### · 输出
 #### · 输入
