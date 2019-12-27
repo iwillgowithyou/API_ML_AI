@@ -43,6 +43,15 @@
 - 百度智能云文本检测
 - Bilibili开放平台举报API 
 ## 原型
+### 原型源文件[下载地址](https://gitee.com/NFUNM062/API_final_axure)
+### [Axure高保真原型](https://nfunm062.gitee.io/api_final_axure/#g=1&p=%E5%90%AF%E5%8A%A8%E9%A1%B5%E5%92%8C%E5%BC%95%E5%AF%BC%E9%A1%B5)
+### 产品原型图
+1.启动页和引导页
+· 启动页
+
+
+
+
 
 ## API 产品使用关键AI或机器学习之API的输出入展示
 ### API1.使用水平
@@ -161,5 +170,3 @@ def check_content():
     }]
 }
 ```
-#### · 输出
-#### · 输入
