@@ -90,7 +90,11 @@
 ![举报](http://chuantu.xyz/t6/709/1577634062x989559068.jpg)
 - **活动页**  
 ![活动页 ](http://chuantu.xyz/t6/709/1577634038x989559068.jpg)
-
+### 4.口头操作说明
+- 用户可以在首页的**下载ass文件**处点击，输入视频id下载对应的弹幕ass文件
+- 下载完成后点击**上传ass文件**处，完成上传
+- 点击导航栏**一键净化**可以筛选各类违规弹幕
+- 选择相应的弹幕后选择**一键净化**完成对违规弹幕的举报
 
 ## API 产品使用关键AI或机器学习之API的输出入展示
 ### API1.使用水平
@@ -111,7 +115,7 @@ def get_access_key():
 ```
 #### · 输出
 ```
-b'{"refresh_token":"25.fc46e230176f79544c50cdf981d80821.315360000.1892389261.282335-18084954","expires_in":2592000,"session_key":"9mzdXRcAGnjUR4kZrId\\/GmoSv0Ou634xIqbKIsrARQt13r6IkG42uQgpkQAApHRkpEnogCnnQMr9D1IA6+egTndTI+Elaw==","access_token":"24.fcb4e1efc8619b18f80c1060e4d53eea.2592000.1579621261.282335-18084954","scope":"audio_voice_assistant_get brain_enhanced_asr audio_tts_post public vis-ocr_ocr vis-antiporn_antiporn_v2 vis-classify_watermark brain_ocr_scope brain_gif_antiporn brain_ocr_general brain_ocr_general_basic vis-classify_terror vis-ocr_business_license brain_ocr_webimage brain_all_scope vis-starface_public_person solution_face brain_ocr_idcard brain_ocr_driving_license brain_ocr_vehicle_license brain_antiporn brain_antiterror vis-classify_\\u6076\\u5fc3\\u56fe\\u8bc6\\u522b\\u670d\\u52a1 vis-ocr_plate_number brain_politician brain_imgquality_general brain_solution brain_ocr_plate_number brain_watermark brain_ocr_accurate brain_ocr_accurate_basic brain_ocr_receipt brain_ocr_business_license brain_solution_iocr brain_public brain_disgust brain_qrcode brain_ocr_handwriting brain_antispam_spam brain_ocr_passport brain_ocr_vat_invoice brain_numbers picchain_test_picchain_api_scope brain_ocr_business_card brain_ocr_train_ticket brain_ocr_taxi_receipt vis-ocr_household_register vis-ocr_vis-classify_birth_certificate vis-ocr_\\u53f0\\u6e7e\\u901a\\u884c\\u8bc1 vis-ocr_\\u6e2f\\u6fb3\\u901a\\u884c\\u8bc1 vis-ocr_\\u673a\\u52a8\\u8f66\\u68c0\\u9a8c\\u5408\\u683c\\u8bc1\\u8bc6\\u522b vis-ocr_\\u8f66\\u8f86vin\\u7801\\u8bc6\\u522b vis-ocr_\\u5b9a\\u989d\\u53d1\\u7968\\u8bc6\\u522b vis-ocr_\\u4fdd\\u5355\\u8bc6\\u522b brain_ocr_vin brain_ocr_quota_invoice brain_ocr_birth_certificate brain_ocr_household_register brain_ocr_HK_Macau_pass brain_ocr_taiwan_pass brain_ocr_vehicle_certificate brain_ocr_insurance_doc wise_adapt lebo_resource_base lightservice_public hetu_basic lightcms_map_poi kaidian_kaidian ApsMisTest_Test\\u6743\\u9650 vis-classify_flower lpq_\\u5f00\\u653e cop_helloScope ApsMis_fangdi_permission smartapp_snsapi_base iop_autocar oauth_tp_app smartapp_smart_game_openapi oauth_sessionkey smartapp_swanid_verify smartapp_opensource_openapi smartapp_opensource_recapi fake_face_detect_\\u5f00\\u653eScope vis-ocr_\\u865a\\u62df\\u4eba\\u7269\\u52a9\\u7406 idl-video_\\u865a\\u62df\\u4eba\\u7269\\u52a9\\u7406","session_secret":"c714e044adb914211218983681008341"}\n'
+b'{"refresh_token":"25.fc46e230176f79544c50cdf981d80821.315360000.1892389261.282335-18084954","expires_in":2592000,"session_key":"9mzdXRcAGnjUR4kZrId\\/GmoSv0Ou634xIqbKIsrARQt13r6IkG42uQgpkQAApHRkpEnogCnnQMr9D1IA6+egTndTI+Elaw==","access_token":"24.fcb4e1efc8619b18f80c1060e4d53eea.2592000.1579621261.282335-18084954"
 ```
 #### · 文本审核代码示例
 #### · 输入
@@ -209,3 +213,10 @@ def check_content():
     }]
 }
 ```
+### API2.使用比较分析
+
+
+### API3.使用后风险报告
+#### 百度智能云文本检测API定价：  
+![定价](http://chuantu.xyz/t6/709/1577634775x989499252.png)
+![定价2](http://chuantu.xyz/t6/709/1577634900x989559068.png)
